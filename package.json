@@ -1,7 +1,7 @@
 {
-  "name": "carousel-project",
+  "name": "whack-a-mole",
   "version": "1.0.0",
-  "description": "Carousel Project for Bootcamp Prep",
+  "description": "Whack-a-Mole Project for Bootcamp Prep",
   "author": "Ken Huh <ken@vanillacoding.co>",
   "license": "MIT",
   "scripts": {
