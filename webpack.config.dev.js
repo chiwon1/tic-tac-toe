@@ -4,21 +4,21 @@ const webpackConfig = require('./webpack.config');
 
 module.exports = merge(webpackConfig, {
 
-    devtool: 'eval',
+  devtool: 'eval',
 
-    output: {
-        pathinfo: true,
-        publicPath: '/',
-        filename: '[name].js'
-    },
+  output: {
+    pathinfo: true,
+    publicPath: '/',
+    filename: '[name].js'
+  },
 
-    plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
 
-    devServer: {
-        host: '0.0.0.0',
-        hot: true
-    }
+  devServer: {
+    host: '0.0.0.0',
+    hot: true
+  }
 
 });

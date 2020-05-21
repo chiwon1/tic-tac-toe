@@ -1,7 +1,7 @@
 {
-  "name": "whack-a-mole",
+  "name": "tick-tack-toe",
   "version": "1.0.0",
-  "description": "Whack-a-Mole Project for Bootcamp Prep",
+  "description": "Tick Tack Toe Project",
   "author": "Ken Huh <ken@vanillacoding.co>",
   "license": "MIT",
   "scripts": {

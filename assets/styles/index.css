@@ -1,6 +1,7 @@
 html, body {
   box-sizing: border-box;
   background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
 }
 
 *, *:before, *:after {
@@ -9,4 +10,20 @@ html, body {
 
 h1 {
   color: #2574D0;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.main-logo {
+  display: block;
+  margin: 2em auto 0;
+  height: 100px;
+}
+
+.board {
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  margin: 0 auto;
 }
