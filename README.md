@@ -1,3 +1,5 @@
+![Tick Tack Toe](/ticktacktoe.png)
+
 # Tick Tack Toe Project
 
 Tick Tack Toe 게임을 웹에서 구현하는 과제입니다.
