@@ -1,5 +1,7 @@
 ![Tick Tack Toe](/ticktacktoe.png)
 
+> 🚨과제를 시작하는 방법과 제출하는 방법은 [과제 관련 안내](https://www.notion.so/vanillacoding/9b7bb71aa95f4bd4906e7496d6ad8db3) 페이지에서 찾을 수 있습니다.
+
 # Tick Tack Toe Project
 
 Tick Tack Toe 게임을 웹에서 구현하는 과제입니다.
