@@ -1,5 +1,5 @@
 // Load application styles
-import 'styles/index.css';
+import '../assets/styles/index.css';
 
 // ================================
 // START YOUR APP HERE

@@ -24,7 +24,7 @@ $ npm install
 
 ```sh
 $ npm start
-# Visit http://localhost:8080 from your browser (Chrome)
+# Visit http://localhost:1234 from your browser (Chrome)
 ```
 
 - HTML 수정: `index.html`를 수정하세요.
