@@ -31,8 +31,8 @@ $ npm start
 
 - HTML 수정: `index.html`를 수정하세요.
 - JS 수정: `/app/index.js`를 수정하세요.
-- CSS 수정: `/assets/styles/index.css`를 수정하세요.
-- 이미지: `/assets/images` 디렉토리를 이용하세요.
+- CSS 수정: `/styles/index.css`를 수정하세요.
+- 이미지: `/images` 디렉토리를 이용하세요.
 
 ## TODO
 
