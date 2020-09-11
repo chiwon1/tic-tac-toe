@@ -1,6 +1,6 @@
 ![Tick Tack Toe](/ticktacktoe.png)
 
-> 🚨과제를 시작하는 방법과 제출하는 방법은 [과제 관련 안내](https://www.notion.so/vanillacoding/9b7bb71aa95f4bd4906e7496d6ad8db3) 페이지에서 찾을 수 있습니다.
+> 🚨과제를 시작하는 방법과 제출하는 방법은 프렙 가이드 페이지에서 찾을 수 있습니다. 잘 못찾으시면, 매니저 님께 문의해주세요!
 
 # Tick Tack Toe Project
 
@@ -11,7 +11,7 @@ Tick Tack Toe 게임을 웹에서 구현하는 과제입니다.
 기초적인 Logic을 완성하는 능력과 DOM을 다루는 기술에 조금 더 익숙해지는 것을 목표로 삼으시면 좋을것 같습니다.
 
 - 반드시 아래 Setup과 Development 부분을 읽어보세요.
-- 과제를 시작하는 방법과 제출하는 방법은 [과제 관련 안내](https://www.notion.so/vanillacoding/9b7bb71aa95f4bd4906e7496d6ad8db3) 페이지에서 찾을 수 있습니다.
+- 과제를 시작하는 방법과 제출하는 방법은 프렙 가이드 페이지에서 찾을 수 있습니다.
 - 상세 요구 사항은 아래 TODO 파트를 참고하세요.
 
 ## Setup (사전 설치)
