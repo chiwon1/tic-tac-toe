@@ -34,6 +34,21 @@ $ npm start
 - CSS 수정: `/styles/index.css`를 수정하세요.
 - 이미지: `/images` 디렉토리를 이용하세요.
 
+## 과제에서 자바스크립트로 이미지 작업하는 방법
+
+아래 방법은 자바스크립트를 이용하는 상황에만 적용되며, HTML에서 이미지를 추가하는 것은 기존에 알고 계시는 것처럼 진행하시면 됩니다.
+
+```js
+// 이미지 경로에 따라 아래와 같은 구문 삽입
+// `yourImageName` 부분은 사용하는 이미지의 이름을 지어서 넣어주세요.
+import yourImageName from "../images/vc.png";
+
+var $something = document.querySelector(".main-logo");
+
+// 이렇게 이미지 요소의 `src` 속성을 추가할 수 있습니다.
+$something.src = yourImageName;
+```
+
 ## TODO
 
 스타일이나 아래에 명시되지 않은 기능은 재량껏 구현해주시기 바랍니다. 애니메이션이나 시각적인 효과는 중요하지 않지만, 시간이 되면 시도해보세요.
