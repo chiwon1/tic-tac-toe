@@ -9,7 +9,9 @@ setTimeout(function () {
 
 /*
 
-  KEN: Do not modify and use 'calculateWinner' function to determine if there is a winner.
+  KEN: Do not modify `calculateWinner` function.
+  
+  Use 'calculateWinner' function to determine if there is a winner.
 
   Pass in an array of 'X', 'O'.
 
