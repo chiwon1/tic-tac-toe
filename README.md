@@ -18,14 +18,18 @@ Tick Tack Toe 게임을 웹에서 구현하는 과제입니다.
 
 Install dependencies
 
+터미널에서 과제 디렉토리로 이동 후, 실행하세요.
+
 ```sh
-$ npm install
+npm install
 ```
 
 ## Development (작업 방법)
 
+터미널에서 과제 디렉토리로 이동 후, 실행하세요.
+
 ```sh
-$ npm start
+npm start
 # Visit http://localhost:1234 from your browser (Chrome)
 ```
 
