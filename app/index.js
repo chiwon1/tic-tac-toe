@@ -36,8 +36,7 @@ function calculateWinner(squares) {
 function switchTurn() {
   if (currentTurn === turnsEnum.X) {
     currentTurn = turnsEnum.O;
-  }
-  else {
+  } else {
     currentTurn = turnsEnum.X;
   }
   whosTurn.textContent = currentTurn + "'s turn";
@@ -60,8 +59,7 @@ function startGame() {
 
         if (calculateWinner(resultArray)) {
           endGame();
-        }
-        else if (isDraw()) {
+        } else if (isDraw()) {
           resultShow.classList.add("show");
           resultMessage.textContent = "Draw";
         }
@@ -81,8 +79,7 @@ function buildResultArray() {
 function endGame() {
   if (currentTurn === turnsEnum.O) {
     resultMessage.textContent = turnsEnum.O + " Win!";
-  }
-  else {
+  } else {
     resultMessage.textContent = turnsEnum.X + " Win!";
   }
   resultShow.classList.add("show");
