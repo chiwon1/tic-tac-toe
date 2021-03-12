@@ -1,43 +1,15 @@
-// ================================
-// START YOUR APP HERE
-// ================================
+const $cells = document.querySelectorAll(".cell");
+const turnsEnum = Object.freeze({ X: "X", O: "O" });
+let currentTurn = turnsEnum.X;
+let resultArray = ["", "", "", "", "", "", "", "", ""];
+const resultShow = document.querySelector(".resultShow");
+const resultMessage = document.querySelector(".resultMessage");
+const restartButton = document.querySelector("#restartButton");
+const startButton = document.querySelector("#startButton");
+const whosTurn = document.querySelector(".whosturn");
+restartButton.addEventListener("click", startGame);
+startButton.addEventListener("click", startGame);
 
-// KEN: You can delete this code..
-setTimeout(function () {
-  alert('Getting Started? Look for app/index.js..');
-}, 500);
-
-/*
-
-  KEN: Do not modify `calculateWinner` function.
-  
-  Use 'calculateWinner' function to determine if there is a winner.
-
-  Pass in an array of 'X', 'O'.
-
-  EX 1)
-
-  const squares = [
-    null, null, null,
-    null, 'X', null,
-    null, null, 'O',
-  ];
-
-  const result = calculateWinner(squares);
-  console.log(result); // null
-
-  EX 2)
-
-  const squares = [
-    null, 'O', 'O',
-    'X', 'X', 'X',
-    null, 'O', 'O',
-  ];
-
-  const result = calculateWinner(squares);
-  console.log(result); // 'X'
-
- */
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
@@ -61,8 +33,67 @@ function calculateWinner(squares) {
   return null;
 }
 
-/*
+function switchTurn() {
+  if (currentTurn === turnsEnum.X) {
+    currentTurn = turnsEnum.O;
+  }
+  else {
+    currentTurn = turnsEnum.X;
+  }
+  whosTurn.textContent = currentTurn + "'s turn";
+}
 
-  KEN: Your code starts below..
+function startGame() {
+  resultShow.classList.remove("show");
+  currentTurn = turnsEnum.X;
+  whosTurn.textContent = currentTurn + "'s turn";
+  for (let i = 0; i < $cells.length; i++) {
+    $cells[i].textContent = "";
+  }
 
- */
+  for (let i = 0; i < $cells.length; i++) {
+    $cells[i].addEventListener("click", function (event) {
+      if (event.target.textContent === "") {
+        event.target.textContent = currentTurn;
+
+        buildResultArray();
+
+        if (calculateWinner(resultArray)) {
+          endGame();
+        }
+        else if (isDraw()) {
+          resultShow.classList.add("show");
+          resultMessage.textContent = "Draw";
+        }
+
+        switchTurn();
+      }
+    });
+  }
+}
+
+function buildResultArray() {
+  for (let i = 0; i < $cells.length; i++) {
+    resultArray[i] = $cells[i].textContent;
+  }
+}
+
+function endGame() {
+  if (currentTurn === turnsEnum.O) {
+    resultMessage.textContent = turnsEnum.O + " Win!";
+  }
+  else {
+    resultMessage.textContent = turnsEnum.X + " Win!";
+  }
+  resultShow.classList.add("show");
+}
+
+function isDraw() {
+  let isDraw = true;
+  for (let i = 0; i < $cells.length; i++) {
+    if (resultArray[i] === "") {
+      isDraw = false;
+    }
+  }
+  return isDraw;
+}

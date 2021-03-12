@@ -1,22 +1,39 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>Vanilla Coding | Bootcamp Prep</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
   <link href="./styles/index.css" rel="stylesheet" />
 </head>
+
 <body>
   <img class="main-logo" src="./images/vc.png" alt="Vanilla Coding Logo" />
   <h1>Tick Tack Toe</h1>
 
   <section>
     <div class="board">
-      <!-- This is your board.. You can change if you want -->
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="whosturn"></div>
+      <button id="startButton" type="button">START</button>
+    </div>
+    <div class="resultShow">
+      <span class="resultMessage"></span>
+      <button id="restartButton">Restart</button>
     </div>
   </section>
-
   <script src="./app/index.js"></script>
 </body>
+
 </html>

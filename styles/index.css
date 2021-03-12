@@ -5,7 +5,7 @@ html, body {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -22,8 +22,79 @@ h1 {
 }
 
 .board {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   border: 1px solid black;
   margin: 0 auto;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  vertical-align: middle;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+}
+
+#startButton {
+  position: relative;
+  display: inline-block;
+  top: 25%;
+  margin-left: 0;
+  width: 200px;
+  height: 50px;
+  font-size: 40px;
+  clear: both;
+}
+
+.cell {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-top: 100px;
+  font-size: 90px;
+}
+
+.cell.x {
+  background-color: red;
+}
+
+.resultShow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 50px;
+  color: white;
+  flex-direction: column;
+  display: none;
+}
+
+.resultShow.show {
+  display: flex;
+}
+
+#restartButton {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  font-size: 40px;
+}
+
+.whosturn {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: center;
+  font-size: 25px;
+  padding: 5px 0px;
+  margin-left: 50%;
 }
